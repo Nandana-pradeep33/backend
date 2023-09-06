@@ -4,9 +4,9 @@
   "main": "server/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "dev": "cd client && npm run build && cd .. && node server.js",
-    "setup": "npm install && cd client && npm install --force && npm run build && cd .. && node  server.js",
+    "start": "nodemon .",
+    "dev": "cd client && npm run build && cd .. && nodemon .",
+    "setup": "npm install && cd client && npm install --force && npm run build && cd .. && nodemon .",
     "heroku-postbuild": "cd client && npm install --force && npm run build"
   },
   "dependencies": {
