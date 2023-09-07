@@ -1,0 +1,5 @@
+buildCommand: npm install && npm install --force && nodemon .
+startCommand: nodemon .
+env:
+  - key: NODE_VERSION
+    value: 18.15.0 
